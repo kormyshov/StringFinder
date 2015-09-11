@@ -1,12 +1,13 @@
-#ifndef __trie_list_h__
-#define __trie_list_h__
+#ifndef __trie_arr_h__
+#define __trie_arr_h__
 
 #include "header.h"
 
+#define MAX_EDGES 96
+
 typedef struct TTrieStruct {
-	struct TTrieStruct* child;
-	struct TTrieStruct* next;
-	char ch;
+	int data;
+	struct TTrieStruct* child[MAX_EDGES];
 } TTrie;
 
 int    trie_load(const char* fname, TTrie** ptrie);

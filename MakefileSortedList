@@ -1,5 +1,5 @@
-TARGET=StringFinder
-SOURCES=main.c trie_tree.c
+TARGET=test_sortedlist
+SOURCES=test.c trie_sorted_list.c
 OBJECTS=$(SOURCES:%.c=%.o)
 
 CC=gcc
